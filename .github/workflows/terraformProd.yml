@@ -66,4 +66,6 @@ jobs:
         terraform apply -auto-approve
       
     - name: Terraform Destroy
-      run: terraform destroy -auto-approve
+      run: |
+        cd Prod
+        terraform destroy -auto-approve
