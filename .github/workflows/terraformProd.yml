@@ -1,9 +1,12 @@
-name: 'Terraform Dev'
+name: 'Terraform Prod'
 
 on:
   push:
     branches:
     - master
+  pull_request:
+    branches:
+    -master
   
 jobs:
   terraform:
