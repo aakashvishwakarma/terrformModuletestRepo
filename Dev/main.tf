@@ -16,4 +16,4 @@ module "my_instance" {
   ami_id ="ami-048f6ed62451373d9"
   #instance_type ="t2.micro" // we have already defined default value as t2.micro
   subnet_id = "${module.my_vpc.subnet_id}"
-  }
+  
